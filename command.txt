@@ -1,0 +1,37 @@
+phpunit
+
+# will not works because of we haven't install phpunit globally
+How we can run phpunit form here
+: vendor/bin/phpunit
+Above command will ensure that phpunit is exist
+<phpunit bootstrap="vendor/autoload.php"
+    colors="true"
+    verbose="true">
+colors : Return output will return with color
+verbose : Verbose will return some information like running time
+stopOnFailure: Whenever some test failed it will stops other test
+
+The word test is must important to the starting of method name
+
+public function test_multiplication_of_two_number() {
+    $a = 5;
+    $b = 4;
+    $c = $a * $b;
+
+    $this->assertEquals($c, 20);
+}
+
+Or can be use /** @test */ before starting method, it is most clear and faster also
+
+/** @test */
+public function multiplication_of_two_number() {
+    $a = 5;
+    $b = 4;
+    $c = $a * $b;
+
+    $this->assertEquals($c, 20);
+}
+
+# Run command
+cd /phpunittest
+vendor/bin/phpunit
