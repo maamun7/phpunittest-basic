@@ -1,3 +1,11 @@
+PhpUnit settings in PhpStorm
+File -> Setting -> Language & Framework -> PHP -> Click Plus Icon
+Add Local and set path vendor/autoload.php
+and set
+Test Runner
+Check default and browse phpunit.xml file
+
+
 phpunit
 
 # will not works because of we haven't install phpunit globally
